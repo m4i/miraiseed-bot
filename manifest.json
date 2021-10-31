@@ -1,0 +1,22 @@
+{
+  "name": "miraiseed-bot",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://miraiseed6.benesse.ne.jp/seed/vw050004/drill",
+        "https://miraiseed6.benesse.ne.jp/seed/vw050010/drillStart/",
+        "https://miraiseed6.benesse.ne.jp/seed/vw050011/",
+        "https://miraiseed6.benesse.ne.jp/seed/studentResultBonusGrade/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ],
+      "all_frames": true
+    }
+  ]
+}
